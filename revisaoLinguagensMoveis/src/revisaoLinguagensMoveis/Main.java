@@ -1,0 +1,60 @@
+package revisaoLinguagensMoveis;
+
+import java.util.ArrayList;
+
+public class Main {
+
+	public static void main(String[] args) {
+	
+	/*-------------------------------------------------------------------------*/	
+	//A) Instancie um cachorro e um gato;
+		
+	//Instanciando um cachorro direto pela declaração do objeto
+	Cachorro ca1 = new Cachorro("Roberval","Pastor Alemão");
+	
+	//Instanciando um utilizando os getters and setters
+	Gato ga1 = new Gato();
+	ga1.setNome("Midoriya");
+	ga1.setRaca("Persa");
+	/*-------------------------------------------------------------------------*/	
+	
+	//B) Cada um deles caminhar;
+	
+	//chamando o cachorro instanciado e fazendo ele caminhar
+	System.out.println("O " +ca1.name +" esta: " + ca1.caminha());
+	System.out.println("O " +ga1.name +" esta: " + ga1.caminha());
+	System.out.println();
+	/*-------------------------------------------------------------------------*/	
+	
+	//C) Faça o cachorro latir;
+	
+	System.out.println(ca1.name + ": " + ca1.late());
+	System.out.println();
+	/*-------------------------------------------------------------------------*/	
+
+	//D) Faça o gato miar;
+	System.out.println(ga1.name + ": " + ga1.mia());
+	System.out.println();
+	/*-------------------------------------------------------------------------*/	
+
+	//E) Crie um Arraylist para armazenar os dois animais criados;
+	
+	//Criei um arraylist e adicionei o cachorro e o gato.
+	ArrayList<Animal> arrayanimal = new ArrayList<Animal>();
+	arrayanimal.add(ca1);
+	arrayanimal.add(ga1);
+	//print dos elementos dentro do arraylist
+	for(Animal a:arrayanimal) {
+		System.out.println("Nome: " + a.name +"\nRaça: " + a.raca);
+		System.out.println();
+		System.out.println();
+	}
+	
+	//outra maneira de printar
+	for (int i = 0; i < arrayanimal.size(); i++) {
+		System.out.println(arrayanimal.get(i).toString());
+	}
+
+
+	}
+}

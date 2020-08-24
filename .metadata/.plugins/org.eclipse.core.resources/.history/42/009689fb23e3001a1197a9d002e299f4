@@ -1,0 +1,12 @@
+package revisaoLinguagensMoveis;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Cachorro ca1 = new Cachorro();
+		ca1.setNome("nome");
+		
+	}
+
+}

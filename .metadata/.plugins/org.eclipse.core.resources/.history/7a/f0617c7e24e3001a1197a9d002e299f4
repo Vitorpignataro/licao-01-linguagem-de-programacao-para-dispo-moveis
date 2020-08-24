@@ -1,0 +1,20 @@
+package revisaoLinguagensMoveis;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+	//Instanciando um cachorro direto pela declaração do objeto
+	Cachorro ca1 = new Cachorro("Altolfo","Golden");
+	
+	//Instanciando um utilizando os getters and setters
+	Gato ga1 = new Gato();
+	ga1.setNome("Mingau");
+	ga1.setRaca("Sphynx");
+	
+	System.out.println("O " +ca1.nome +" esta " + ca1.caminha());
+
+		
+	}
+
+}

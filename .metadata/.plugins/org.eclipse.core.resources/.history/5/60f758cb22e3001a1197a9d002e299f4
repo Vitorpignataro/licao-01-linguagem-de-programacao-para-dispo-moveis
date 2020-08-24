@@ -1,0 +1,5 @@
+package revisaoLinguagensMoveis;
+
+public interface Gato {
+
+}
